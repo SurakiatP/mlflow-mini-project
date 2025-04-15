@@ -1,4 +1,4 @@
-# 🧪 MLflow Mini Project: Iris Model End-to-End
+# MLflow Mini Project: Iris Model End-to-End
 
 This project demonstrates an **end-to-end ML lifecycle using MLflow**, from training and tracking to registry and serving via API.
 
