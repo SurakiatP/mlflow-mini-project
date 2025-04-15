@@ -23,4 +23,6 @@ def test_invalid_input_type():
 def test_wrong_length():
     res = client.post("/predict", json={"features": [1.0, 2.0]})
     assert res.status_code == 400
-    assert "error" in res.json()
+    assert "detail" in res.json()
+    assert res.json()["detail"] == "Input feature length must be 4."
+
