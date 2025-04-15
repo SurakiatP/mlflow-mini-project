@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744707521804
+current_stage: Archived
+description: null
+last_updated_timestamp: 1744709542312
+name: iris_rf_model
+run_id: 4439c113a3eb43039f6b55b44bc62138
+run_link: null
+source: mlruns/0/4439c113a3eb43039f6b55b44bc62138/artifacts/model
+status: READY
+status_message: null
+storage_location: mlruns/0/4439c113a3eb43039f6b55b44bc62138/artifacts/model
+user_id: null
+version: 4

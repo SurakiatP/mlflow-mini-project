@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1744706664722
+current_stage: None
+description: null
+last_updated_timestamp: 1744706664722
+name: iris_rf_model
+run_id: d8f14c4a3c154ed7a3253e36bddee7d2
+run_link: null
+source: file:///C:/Machine%20Learning%20Projects/mlflow-mini-project/mlruns/473894530584209704/d8f14c4a3c154ed7a3253e36bddee7d2/artifacts/model
+status: READY
+status_message: null
+storage_location: file:///C:/Machine%20Learning%20Projects/mlflow-mini-project/mlruns/473894530584209704/d8f14c4a3c154ed7a3253e36bddee7d2/artifacts/model
+user_id: null
+version: 1

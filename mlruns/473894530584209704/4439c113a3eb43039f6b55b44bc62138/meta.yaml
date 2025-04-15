@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Machine%20Learning%20Projects/mlflow-mini-project/mlruns/473894530584209704/4439c113a3eb43039f6b55b44bc62138/artifacts
+end_time: 1744707521788
+entry_point_name: ''
+experiment_id: '473894530584209704'
+lifecycle_stage: active
+run_id: 4439c113a3eb43039f6b55b44bc62138
+run_name: rf-iris-run
+run_uuid: 4439c113a3eb43039f6b55b44bc62138
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1744707516908
+status: 3
+tags: []
+user_id: parks
