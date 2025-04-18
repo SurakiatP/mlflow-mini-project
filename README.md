@@ -100,6 +100,42 @@ Includes:
 
 ---
 
+## Run with Docker
+This project supports Dockerized deployment to simplify environment setup and ensure consistent behavior across machines.
+
+## Build the Docker Image
+Make sure Docker is installed, then run:
+
+```bash
+docker build -t mlflow-api .
+```
+
+This will:
+  - Use python:3.10-slim as the base image
+  - Install all dependencies listed in requirements.txt
+  - Copy all project files
+  - Start both the MLflow UI (on port 5000) and FastAPI server (on port 8000)
+
+## Run the Container
+```bash
+docker run -p 8000:8000 -p 5000:5000 mlflow-api
+```
+
+Now you can access:
+
+- FastAPI Swagger UI → http://localhost:8000/docs
+
+- MLflow Tracking UI → http://localhost:5000
+
+## Dockerfile Entry (for reference)
+```bash
+CMD ["bash", "-c", "mlflow ui --host 0.0.0.0 --port 5000 & uvicorn src.serve:app --host 0.0.0.0 --port 8000"]
+```
+
+>This command runs both MLflow UI and FastAPI concurrently inside the container.
+
+---
+
 ## Skills Demonstrated
 
 | Area | Details |
@@ -109,6 +145,7 @@ Includes:
 | Backend | FastAPI for serving, Pydantic validation |
 | Testing | `pytest`, `TestClient`, input validation |
 | Deployment Ready | Local serving via FastAPI + MLflow Registry |
+| Dockerization	| Dockerfile, image build, multi-port container execution|
 
 ---
 
@@ -118,6 +155,7 @@ Includes:
 - How to register and promote models in MLflow Registry
 - How to serve a production-ready ML model using FastAPI
 - Importance of experiment reproducibility and testing
+- How to containerize a complete ML workflow using Docker for portable deployment
 
 ---
 ## Project Author
