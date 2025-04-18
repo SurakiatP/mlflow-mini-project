@@ -38,7 +38,7 @@ mlflow-mini-project/
 
 ## Project Workflow
 
-![alt text](images/mlfow_ui_workflow.png)
+![alt text](images/image.png)
 
 1. **Train Model** → `src/train.py`
 2. **MLflow Tracking** → Log metrics, params, model
